@@ -17,11 +17,11 @@ The application caters to the Tech community, providing a platform to publish bl
 Building this application involved creating a scalable platform supporting multiple users, blog posts, and comments while ensuring security measures for user authentication and data protection. The application adheres to modern web development standards, utilizing the MVC architecture pattern.
 
 # Usage Information
-Deployed Application Link
+Deployed Application Link- heroku
 
 
 GitHub Repository
-
+https://github.com/hementB2/-MVC-Tech-Blog
 
 
 Screenshots
