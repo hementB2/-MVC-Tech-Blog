@@ -18,6 +18,7 @@ Building this application involved creating a scalable platform supporting multi
 
 # Usage Information
 Deployed Application Link- heroku
+https://techblog84-55eb416f82fe.herokuapp.com/
 
 
 GitHub Repository
