@@ -6,7 +6,7 @@ const postData = [
     content: "This is the content of the first blog post.",
     user_id: 1,
   },
-  // add more dummy chess blog posts here
+ 
   {
     title: "Second Blog Post",
     content: "This is the content of the second blog post.",
