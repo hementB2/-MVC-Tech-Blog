@@ -52,4 +52,27 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    req
+    req.session.save(() => {
+      req.session.user_id = userData.id; // Set the user_id in the session
+      req.session.logged_in = true; // Set logged_in to true in the session
+
+      res.status(200).json({ user: userData, message: "You are now logged in!" }); // Send a 200 status code and success message
+    });
+  } catch (err) {
+    res.status(400).json(err); // Send a 400 status code and error response if something went wrong
+  }
+});
+
+// Route to log out a user
+router.post("/logout", (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end(); // Destroy the session and send a 204 status code
+    });
+  } else {
+    res.status(404).end(); // Send a 404 status code if no session found
+  }
+});
+
+// Export the router
+module.exports = router;
